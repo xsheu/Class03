@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelmessage: UILabel!
+    
+    @IBAction func buttonpushclick(_ sender: UIButton) {
+        labelmessage.text="Swift hello"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
