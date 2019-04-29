@@ -13,7 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelmessage: UILabel!
     
     @IBAction func buttonpushclick(_ sender: UIButton) {
-        labelmessage.text="Swift hello"
+        if(labelmessage.text=="Swift hello") {
+            labelmessage.text="Hello Swift"
+        }
+        else {
+            labelmessage.text="Swift hello"
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
