@@ -88,14 +88,41 @@
             </objects>
             <point key="canvasLocation" x="1915.9420289855075" y="600.66964285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Mybrowser View Controller-->
         <scene sceneID="ccu-FQ-s1e">
             <objects>
-                <viewController id="0ha-xs-6ZX" sceneMemberID="viewController">
+                <viewController id="0ha-xs-6ZX" customClass="MybrowserViewController" customModule="Class03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tme-VY-hsu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0K-SO-WdR">
+                                <rect key="frame" x="308" y="390" width="77" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="UKH-9T-8au"/>
+                                    <constraint firstAttribute="height" constant="30" id="b5g-uH-dAk"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="eoh-8f-rdi"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0H0-bt-h8z">
+                                <rect key="frame" x="26" y="390" width="274" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="550" id="1o9-RJ-ndQ"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="5QX-dc-QQD"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="V0K-SO-WdR" secondAttribute="trailing" constant="10" id="HLe-4u-V5X"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="ZRg-6X-HO3"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="kQx-FI-58v"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="450" id="lc6-px-PRd"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="110" id="vdc-4I-8dL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4d-iC-wde"/>
                     </view>
                 </viewController>
