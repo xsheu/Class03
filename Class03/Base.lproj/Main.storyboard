@@ -96,18 +96,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0K-SO-WdR">
-                                <rect key="frame" x="308" y="390" width="77" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0K-SO-WdR">
+                                <rect key="frame" x="339" y="390" width="46" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="UKH-9T-8au"/>
-                                    <constraint firstAttribute="height" constant="30" id="b5g-uH-dAk"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="eoh-8f-rdi"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0H0-bt-h8z">
-                                <rect key="frame" x="26" y="390" width="274" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0H0-bt-h8z">
+                                <rect key="frame" x="26" y="390" width="299" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299" id="ERK-7a-w18"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -115,13 +113,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="550" id="1o9-RJ-ndQ"/>
-                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="5QX-dc-QQD"/>
-                            <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="V0K-SO-WdR" secondAttribute="trailing" constant="10" id="HLe-4u-V5X"/>
-                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="ZRg-6X-HO3"/>
-                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="kQx-FI-58v"/>
-                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="450" id="lc6-px-PRd"/>
-                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="110" id="vdc-4I-8dL"/>
+                            <constraint firstItem="0H0-bt-h8z" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="26" id="MKi-TL-P83"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="PTD-dZ-ljq"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="442" id="mw3-G5-BgX"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="leading" secondItem="0H0-bt-h8z" secondAttribute="trailing" constant="14" id="w2w-Pf-vRH"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="V0K-SO-WdR" secondAttribute="trailing" constant="29" id="zmE-RB-WCP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4d-iC-wde"/>
                     </view>
