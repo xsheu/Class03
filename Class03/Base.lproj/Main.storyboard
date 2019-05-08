@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XAL-gU-3Af">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Class03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="View">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-Ac-D3N">
@@ -78,7 +78,7 @@
             <objects>
                 <viewController id="D1S-8p-QBS" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hcY-6V-9m8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="AOK-hC-lcp"/>
@@ -93,22 +93,19 @@
             <objects>
                 <viewController id="0ha-xs-6ZX" customClass="MybrowserViewController" customModule="Class03" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tme-VY-hsu">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0K-SO-WdR">
-                                <rect key="frame" x="304" y="332" width="90" height="30"/>
+                                <rect key="frame" x="269" y="332" width="90" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="sGu-u7-LkF"/>
+                                    <constraint firstAttribute="width" constant="90" id="4IB-BF-Iif"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0H0-bt-h8z">
-                                <rect key="frame" x="59" y="332" width="237" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="237" id="mht-M9-DWd"/>
-                                </constraints>
+                                <rect key="frame" x="59" y="332" width="202" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -116,11 +113,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="V0K-SO-WdR" secondAttribute="trailing" constant="20" id="Ifl-z7-0vo"/>
-                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="500" id="TOl-2S-3Zr"/>
-                            <constraint firstItem="0H0-bt-h8z" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="59" id="jYf-zj-Y0Z"/>
-                            <constraint firstItem="V0K-SO-WdR" firstAttribute="leading" secondItem="0H0-bt-h8z" secondAttribute="trailing" constant="8" id="nRc-qf-cFy"/>
-                            <constraint firstItem="V0K-SO-WdR" firstAttribute="centerY" secondItem="0H0-bt-h8z" secondAttribute="centerY" id="sSQ-YF-qyC"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="leading" secondItem="0H0-bt-h8z" secondAttribute="trailing" constant="8" symbolic="YES" id="J6M-Ft-3HS"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="trailing" secondItem="tme-VY-hsu" secondAttribute="trailingMargin" id="PKp-pb-v0B"/>
+                            <constraint firstItem="0H0-bt-h8z" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="59" id="ZgQ-fP-Fhh"/>
+                            <constraint firstItem="0H0-bt-h8z" firstAttribute="top" secondItem="Q4d-iC-wde" secondAttribute="top" constant="244" id="chz-IV-Hph"/>
+                            <constraint firstItem="0H0-bt-h8z" firstAttribute="top" secondItem="V0K-SO-WdR" secondAttribute="top" id="jQX-sD-uEj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4d-iC-wde"/>
                     </view>
@@ -135,7 +132,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XAL-gU-3Af" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xcn-3o-A9t">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
