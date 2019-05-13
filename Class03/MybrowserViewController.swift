@@ -16,7 +16,7 @@ class MybrowserViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
+        myWebView.load(URLRequest(url: URL(string: "https://www.mozilla.org/zh-TW/firefox/")!))
 
         // Do any additional setup after loading the view.
     }
