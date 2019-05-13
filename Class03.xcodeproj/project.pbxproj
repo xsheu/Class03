@@ -16,6 +16,7 @@
 		0A8DE97C226D5EF100A52D1B /* Class03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE97B226D5EF100A52D1B /* Class03Tests.swift */; };
 		0A8DE987226D5EF100A52D1B /* Class03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE986226D5EF100A52D1B /* Class03UITests.swift */; };
 		0A8DE996226D606400A52D1B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0A8DE995226D606400A52D1B /* .gitignore */; };
+		0AD10C5222891F8500050D4E /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD10C5122891F8500050D4E /* WatchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0A8DE986226D5EF100A52D1B /* Class03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class03UITests.swift; sourceTree = "<group>"; };
 		0A8DE988226D5EF100A52D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8DE995226D606400A52D1B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		0AD10C5122891F8500050D4E /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD10C5222891F8500050D4E /* WatchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 				0A8DE97A226D5EF100A52D1B /* Class03Tests */,
 				0A8DE985226D5EF100A52D1B /* Class03UITests */,
 				0A8DE964226D5EF000A52D1B /* Products */,
+				0AD10C5022891F8500050D4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 				0A8DE988226D5EF100A52D1B /* Info.plist */,
 			);
 			path = Class03UITests;
+			sourceTree = "<group>";
+		};
+		0AD10C5022891F8500050D4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD10C5122891F8500050D4E /* WatchKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

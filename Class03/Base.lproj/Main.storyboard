@@ -109,25 +109,41 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0ha-xs-6ZX" id="UtS-ca-P2l"/>
+                                </connections>
                             </textField>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aZ-xA-g9d" userLabel="myWebView">
+                                <rect key="frame" x="16" y="117" width="343" height="572"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="8aZ-xA-g9d" firstAttribute="top" secondItem="Q4d-iC-wde" secondAttribute="top" constant="29" id="COK-GQ-ant"/>
                             <constraint firstItem="V0K-SO-WdR" firstAttribute="leading" secondItem="0H0-bt-h8z" secondAttribute="trailing" constant="8" symbolic="YES" id="J6M-Ft-3HS"/>
                             <constraint firstItem="0H0-bt-h8z" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="30" id="Jkz-CH-uVF"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="8aZ-xA-g9d" secondAttribute="trailing" constant="16" id="Ojr-WZ-ZGh"/>
                             <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="35" id="WRc-8v-WzI"/>
+                            <constraint firstItem="V0K-SO-WdR" firstAttribute="top" secondItem="8aZ-xA-g9d" secondAttribute="bottom" constant="24" id="eiV-dv-JdL"/>
                             <constraint firstItem="0H0-bt-h8z" firstAttribute="top" secondItem="V0K-SO-WdR" secondAttribute="top" id="jQX-sD-uEj"/>
+                            <constraint firstItem="8aZ-xA-g9d" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="16" id="kI4-Bv-pVV"/>
                             <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="V0K-SO-WdR" secondAttribute="trailing" constant="25" id="yXm-me-qW5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4d-iC-wde"/>
                     </view>
                     <connections>
                         <outlet property="btnURLconstraint" destination="WRc-8v-WzI" id="Hfb-lP-Pru"/>
+                        <outlet property="myWebView" destination="8aZ-xA-g9d" id="rRT-Jw-u43"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8n-A8-m8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915.9420289855075" y="-129.24107142857142"/>
+            <point key="canvasLocation" x="1914.4000000000001" y="-129.31034482758622"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="veg-vu-Hdk">

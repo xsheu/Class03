@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import WebKit
 
-class MybrowserViewController: UIViewController {
+class MybrowserViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var btnURLconstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
 
         // Do any additional setup after loading the view.
     }
@@ -31,10 +34,28 @@ class MybrowserViewController: UIViewController {
         
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn  range: NSRange, replacementString string: String) -> Bool {
+        let accept="abcdeABCDE"
+        let cs = NSCharacterSet(charactersIn: accept).inverted
+        let filters = string.components(separatedBy: cs).joined(separator: "")
+        if(string != filters){
+            return false
+        }
+        let current = textField.text! as NSString
+        let newString :NSString = current.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= 10
+    }
+    
     @objc func keyboardWillAppear(notification:NSNotification?) {
         print("keyboadWillAppear")
-        self.btnURLconstraint.constant=350;
+        guard let frame = notification?.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else {
+            return
+        }
         
+        self.btnURLconstraint.constant=frame.cgRectValue.height;
     }
     @objc func keyboardWillDisAppear(notification:NSNotification?) {
         print("keyboadWillDisAppear")
