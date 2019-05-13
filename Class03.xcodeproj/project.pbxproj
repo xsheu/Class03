@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A346B82227FDEDC00E6CEB6 /* MybrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A346B81227FDEDC00E6CEB6 /* MybrowserViewController.swift */; };
+		0A8BD56422893435007213C0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8BD56322893435007213C0 /* WebKit.framework */; };
 		0A8DE967226D5EF000A52D1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE966226D5EF000A52D1B /* AppDelegate.swift */; };
 		0A8DE969226D5EF000A52D1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE968226D5EF000A52D1B /* ViewController.swift */; };
 		0A8DE96C226D5EF000A52D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8DE96A226D5EF000A52D1B /* Main.storyboard */; };
@@ -16,7 +17,6 @@
 		0A8DE97C226D5EF100A52D1B /* Class03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE97B226D5EF100A52D1B /* Class03Tests.swift */; };
 		0A8DE987226D5EF100A52D1B /* Class03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8DE986226D5EF100A52D1B /* Class03UITests.swift */; };
 		0A8DE996226D606400A52D1B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 0A8DE995226D606400A52D1B /* .gitignore */; };
-		0AD10C5222891F8500050D4E /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD10C5122891F8500050D4E /* WatchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0A346B81227FDEDC00E6CEB6 /* MybrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MybrowserViewController.swift; sourceTree = "<group>"; };
+		0A8BD56322893435007213C0 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0A8DE963226D5EF000A52D1B /* Class03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Class03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8DE966226D5EF000A52D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A8DE968226D5EF000A52D1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD10C5222891F8500050D4E /* WatchKit.framework in Frameworks */,
+				0A8BD56422893435007213C0 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +139,7 @@
 		0AD10C5022891F8500050D4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A8BD56322893435007213C0 /* WebKit.framework */,
 				0AD10C5122891F8500050D4E /* WatchKit.framework */,
 			);
 			name = Frameworks;
