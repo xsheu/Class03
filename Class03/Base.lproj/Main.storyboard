@@ -97,7 +97,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0K-SO-WdR">
-                                <rect key="frame" x="269" y="332" width="90" height="30"/>
+                                <rect key="frame" x="260" y="713" width="90" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="4IB-BF-Iif"/>
@@ -105,7 +105,7 @@
                                 <state key="normal" title="Button"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0H0-bt-h8z">
-                                <rect key="frame" x="59" y="332" width="202" height="30"/>
+                                <rect key="frame" x="30" y="713" width="222" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -114,13 +114,16 @@
                         <color key="backgroundColor" red="0.57380741830000004" green="0.56553578380000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V0K-SO-WdR" firstAttribute="leading" secondItem="0H0-bt-h8z" secondAttribute="trailing" constant="8" symbolic="YES" id="J6M-Ft-3HS"/>
-                            <constraint firstItem="V0K-SO-WdR" firstAttribute="trailing" secondItem="tme-VY-hsu" secondAttribute="trailingMargin" id="PKp-pb-v0B"/>
-                            <constraint firstItem="0H0-bt-h8z" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="59" id="ZgQ-fP-Fhh"/>
-                            <constraint firstItem="0H0-bt-h8z" firstAttribute="top" secondItem="Q4d-iC-wde" secondAttribute="top" constant="244" id="chz-IV-Hph"/>
+                            <constraint firstItem="0H0-bt-h8z" firstAttribute="leading" secondItem="Q4d-iC-wde" secondAttribute="leading" constant="30" id="Jkz-CH-uVF"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="bottom" secondItem="V0K-SO-WdR" secondAttribute="bottom" constant="35" id="WRc-8v-WzI"/>
                             <constraint firstItem="0H0-bt-h8z" firstAttribute="top" secondItem="V0K-SO-WdR" secondAttribute="top" id="jQX-sD-uEj"/>
+                            <constraint firstItem="Q4d-iC-wde" firstAttribute="trailing" secondItem="V0K-SO-WdR" secondAttribute="trailing" constant="25" id="yXm-me-qW5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q4d-iC-wde"/>
                     </view>
+                    <connections>
+                        <outlet property="btnURLconstraint" destination="WRc-8v-WzI" id="Hfb-lP-Pru"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w8n-A8-m8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

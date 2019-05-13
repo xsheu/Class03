@@ -10,6 +10,8 @@ import UIKit
 
 class MybrowserViewController: UIViewController {
 
+    @IBOutlet weak var btnURLconstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,10 +33,12 @@ class MybrowserViewController: UIViewController {
     }
     @objc func keyboardWillAppear(notification:NSNotification?) {
         print("keyboadWillAppear")
+        self.btnURLconstraint.constant=350;
         
     }
     @objc func keyboardWillDisAppear(notification:NSNotification?) {
         print("keyboadWillDisAppear")
+        self.btnURLconstraint.constant=35;
         
     }
    /* @objc keyboardWillAppear(notification: NSNotification?) {
