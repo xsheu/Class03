@@ -9,14 +9,24 @@
 import UIKit
 import WebKit
 
-class MybrowserViewController: UIViewController, UITextFieldDelegate {
+class MybrowserViewController: UIViewController, UITextFieldDelegate, AsyncReponseDelegate {
+    func receviedReponse(_ sender: AsyncRequestWorker, responseString: String, tag: Int) {
+        print(responseString)
+        myWebView.loadHTMLString(responseString, baseURL: URL(string: "https://www.google.com")!)
+    }
+    
 
     @IBOutlet weak var myWebView: WKWebView!
     @IBOutlet weak var btnURLconstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        myWebView.load(URLRequest(url: URL(string: "https://www.mozilla.org/zh-TW/firefox/")!))
+        
+        let worker : AsyncRequestWorker = AsyncRequestWorker()
+        
+        worker.reponseDelegate = self
+        worker.getResponse(from: "https://www.google.com", tag: 1)
+      //  myWebView.load(URLRequest(url: URL(string: "https://www.google.com")!))
 
         // Do any additional setup after loading the view.
     }
