@@ -20,6 +20,20 @@ class ViewController: UIViewController {
             labelmessage.text="Swift hello"
         }
     }
+    @IBAction func btn03(_ sender: Any) {
+        let alert = UIAlertController(title: "information", message: "YN", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "Yes", style: .default, handler: {action in})
+        
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: "Movetoimage2", sender: self)
+        }
+        alert.addAction(okAction)
+ 
+        let cancelAction = UIAlertAction(title: "NOOOO", style: .default, handler: {action in})
+        alert.addAction(cancelAction)
+        present(alert,animated: true,completion: nil)
+      //  performSegue(withIdentifier: "Movetoimage2", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,6 +42,12 @@ class ViewController: UIViewController {
       //  worker.writeToFile(content: "中文", fileName: "info.txt", tag: 0)
       //  let result : String = worker.readFromFile(fileName: "info.txt", tag: 0)
       //  print(result)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+   //     if(segue.identifier == "Movetoimage2") {
+   //         let vc = segue.destination as! ImageViewController
+   //         vc.index = 5
+   //     }
     }
 
 
