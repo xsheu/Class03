@@ -15,7 +15,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate, MKMapVie
 
     var locationManager : CLLocationManager!
     
-    let regionRadius : CLLocationDistance = 10000
+    let regionRadius : CLLocationDistance = 10000
     
     @IBOutlet weak var myMapView: MKMapView!
     
