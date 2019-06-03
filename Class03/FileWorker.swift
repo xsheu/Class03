@@ -5,6 +5,7 @@
 //  Created by stu1 on 2018/7/26.
 //  Copyright © 2018年 tripim. All rights reserved.
 //
+
 import Foundation
 
 protocol FileWorkerDelegate {
@@ -24,6 +25,7 @@ class FileWorker {
             let fileURL  = dir.appendingPathComponent(fileName)
             
             do{
+                
                 try content.write(to: fileURL, atomically: false, encoding: .utf8)
                 
                 self.fileWorkerDelegate?.fileWorkWriteCompleted( self, fileName: fileURL.absoluteString , tag: tag)

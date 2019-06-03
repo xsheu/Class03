@@ -2,52 +2,81 @@
 //  ViewController.swift
 //  Class03
 //
-//  Created by 許光毅 on 2019/4/22.
-//  Copyright © 2019 許光毅. All rights reserved.
+//  Created by L20102 on 2019/4/22.
+//  Copyright © 2019 L20102. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var labelmessage: UILabel!
+
     
-    @IBAction func buttonpushclick(_ sender: UIButton) {
-        if(labelmessage.text=="Swift hello") {
-            labelmessage.text="Hello Swift"
-        }
-        else {
-            labelmessage.text="Swift hello"
-        }
-    }
-    @IBAction func btn03(_ sender: Any) {
-        let alert = UIAlertController(title: "information", message: "YN", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Yes", style: .default, handler: {action in})
+    @IBOutlet weak var lbmsg: UILabel!
+    
+    
+    @IBAction func btnpushclicked(_ sender: UIButton) {
         
-        DispatchQueue.main.async {
-            self.performSegue(withIdentifier: "Movetoimage2", sender: self)
-        }
-        alert.addAction(okAction)
- 
-        let cancelAction = UIAlertAction(title: "NOOOO", style: .default, handler: {action in})
-        alert.addAction(cancelAction)
-        present(alert,animated: true,completion: nil)
-      //  performSegue(withIdentifier: "Movetoimage2", sender: self)
+        lbmsg.text = "Hi, Xcode"
     }
+    
+    @IBAction func btnMapClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
+    }
+    
+    @IBAction func btnMoveToImageClicked(_ sender: Any) {
+        
+        
+        let alert = UIAlertController(title: "資訊", message:"YN", preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "YES", style: .default, handler: { action in
+            
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "moveToM2KSegue", sender: self)
+            }
+            
+        })
+        alert.addAction(okAction)
+        
+    
+        let cancelAction = UIAlertAction(title: "NO", style: .default, handler: { action in
+            
+        })
+        alert.addAction(cancelAction)
+        
+        
+        present(alert, animated: true, completion: nil)
+        
+        //
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       // print( "\(UserDefaults.standard.string(forKey: "hi")! )" )
-      //  let worker : FileWorker = FileWorker()
-      //  worker.writeToFile(content: "中文", fileName: "info.txt", tag: 0)
-      //  let result : String = worker.readFromFile(fileName: "info.txt", tag: 0)
-      //  print(result)
+        
+        let worker : FileWorker = FileWorker()
+        
+        worker.writeToFile(content: "中文", fileName: "info.txt", tag: 0)
+        
+        let result : String = worker.readFromFile(fileName: "info.txt", tag: 0)
+        
+        print(result)
+        
     }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   //     if(segue.identifier == "Movetoimage2") {
-   //         let vc = segue.destination as! ImageViewController
-   //         vc.index = 5
-   //     }
+        
+        if( segue.identifier == "moveToM2KSegue"){
+            
+            let vc = segue.destination as! ImageViewController
+            
+            vc.index = 5
+            
+        }
+        
+        
     }
 
 

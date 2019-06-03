@@ -2,26 +2,29 @@
 //  AppDelegate.swift
 //  Class03
 //
-//  Created by 許光毅 on 2019/4/22.
-//  Copyright © 2019 許光毅. All rights reserved.
+//  Created by L20102 on 2019/4/22.
+//  Copyright © 2019 L20102. All rights reserved.
 //
 
 import UIKit
+import WebKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-  //  var netWorker : AsyncRequestWorker?
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //UserDefaults.standard.setValue("ya!",forKey: "hi")
-        //UserDefaults.standard.synchronize()
         
-       
+//        UserDefaults.standard.setValue("ya!", forKey: "hi")
+//        UserDefaults.standard.synchronize()
+//
+//
+//        print( "\( UserDefaults.standard.string(forKey: "hi")! )"  )
+        
+        print("\( NSHomeDirectory() )")
+
         return true
     }
 

@@ -5,6 +5,7 @@
 //  Created by 房懷安 on 2018/7/25.
 //  Copyright © 2018年 房懷安. All rights reserved.
 //
+
 import Foundation
 import UIKit
 import SQLite
@@ -77,26 +78,26 @@ struct ServiceCategoryContext {
         }
     }
     
-    //
-  //  func readData() -> [ServiceCategory] {
-        
-    //    var responseArray : [ServiceCategory] = []
-        
-     //   for category in try! db.prepare(categories) {
-            
-       //     let serviceCategory = ServiceCategory()
-            
-         //   serviceCategory.Index = category[serviceId]
-        //    serviceCategory.Name = category[name]
-        //    serviceCategory.ImagePath = category[imagepath]
-            
-        //    responseArray.append(serviceCategory)
-       // }
-        
-      //  responseArray.sort(by: { $0.Index < $1.Index })
-        
-       // return responseArray
-   // }
+    
+    func readData() -> [ServiceCategory] {
+
+        var responseArray : [ServiceCategory] = []
+
+        for category in try! db.prepare(categories) {
+
+            let serviceCategory = ServiceCategory()
+
+            serviceCategory.Index = category[serviceId]
+            serviceCategory.Name = category[name]
+            serviceCategory.ImagePath = category[imagepath]
+
+            responseArray.append(serviceCategory)
+        }
+
+        responseArray.sort(by: { $0.Index < $1.Index })
+
+        return responseArray
+    }
     
     //
     func updateData(serviceId: Int, old_name: String, new_name: String) {
@@ -117,15 +118,15 @@ struct ServiceCategoryContext {
         catch {  print(error) }
     }
     
-    //
+    
     func clearAll()  {
-        
- //       let categories = readData()
-    //    var indexes : [Int] = []
-        
-  //      for category in categories{  indexes.append(category.Index) }
-        
-    //    for index in indexes{  delData(currcategoryIndex:index ) }
+
+        let categories = readData()
+        var indexes : [Int] = []
+
+        for category in categories{  indexes.append(category.Index) }
+
+        for index in indexes{  delData(currcategoryIndex:index ) }
     }
     
 }
