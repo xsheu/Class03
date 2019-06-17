@@ -2,13 +2,23 @@
 //  MyTableViewCell.swift
 //  Class03
 //
-//  Created by 許光毅 on 2019/6/17.
-//  Copyright © 2019 許光毅. All rights reserved.
+//  Created by L20102 on 2019/6/17.
+//  Copyright © 2019 L20102. All rights reserved.
 //
 
 import UIKit
 
 class MyTableViewCell: UITableViewCell {
+    
+    static let identifier = "MyTableViewCell"
+    
+    @IBOutlet weak var lbContent: UILabel!
+    
+    func updateContent(content : String) -> Void {
+    
+        self.lbContent.text = content
+    }
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
