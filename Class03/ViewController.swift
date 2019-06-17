@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-
     
     @IBOutlet weak var lbmsg: UILabel!
     
@@ -22,6 +21,9 @@ class ViewController: UIViewController {
     
     @IBAction func btnMapClicked(_ sender: UIButton) {
         self.performSegue(withIdentifier: "moveToMapSegue", sender: self)
+    }
+    @IBAction func myTabklebtnClicked(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "moveToTableSegue", sender: self)
     }
     
     @IBAction func btnMoveToImageClicked(_ sender: Any) {
