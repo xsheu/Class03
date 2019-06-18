@@ -32,7 +32,7 @@ class AsyncRequestWorker {
             if( 200 == statusCode){
                 
                 let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-               let responseString = String(dataString!)
+                let responseString = dataString! as String
                 
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "response.received"), object: self, userInfo: ["aaa": responseString])
 
