@@ -18,6 +18,7 @@
 		F41294BD226D5EF900750218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41294BB226D5EF900750218 /* LaunchScreen.storyboard */; };
 		F41294C8226D5EFA00750218 /* Class03Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41294C7226D5EFA00750218 /* Class03Tests.swift */; };
 		F41294D3226D5EFA00750218 /* Class03UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41294D2226D5EFA00750218 /* Class03UITests.swift */; };
+		F41CCD1222C066A40091BC18 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41CCD1122C066A40091BC18 /* WebViewController.swift */; };
 		F489DE65229B870F00BFD32B /* FileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489DE64229B870F00BFD32B /* FileWorker.swift */; };
 		F489DE67229B941400BFD32B /* ServiceCategoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489DE66229B941400BFD32B /* ServiceCategoryContext.swift */; };
 		F48A648922891FBA00AC89A3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48A648522891ED200AC89A3 /* WebKit.framework */; };
@@ -71,6 +72,7 @@
 		F41294CE226D5EFA00750218 /* Class03UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Class03UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41294D2226D5EFA00750218 /* Class03UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Class03UITests.swift; sourceTree = "<group>"; };
 		F41294D4226D5EFA00750218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41CCD1122C066A40091BC18 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		F489DE64229B870F00BFD32B /* FileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWorker.swift; sourceTree = "<group>"; };
 		F489DE66229B941400BFD32B /* ServiceCategoryContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCategoryContext.swift; sourceTree = "<group>"; };
 		F48A648522891ED200AC89A3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -169,6 +171,7 @@
 				F4E8BF2D22B7243B001CD817 /* ProductListViewController.swift */,
 				F4E8BF2F22B73727001CD817 /* MyTableViewCell.swift */,
 				F4E8BF3122B74272001CD817 /* DetailViewController.swift */,
+				F41CCD1122C066A40091BC18 /* WebViewController.swift */,
 			);
 			path = Class03;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				F41294B5226D5EF800750218 /* ViewController.swift in Sources */,
 				F40B20E0227FDED800284D48 /* MyBrowserViewController.swift in Sources */,
 				F489DE65229B870F00BFD32B /* FileWorker.swift in Sources */,
+				F41CCD1222C066A40091BC18 /* WebViewController.swift in Sources */,
 				F4E8BF2E22B7243B001CD817 /* ProductListViewController.swift in Sources */,
 				F41294B3226D5EF800750218 /* AppDelegate.swift in Sources */,
 			);
@@ -619,7 +623,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 239TX4AJYH;
 				INFOPLIST_FILE = Class03/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,7 +641,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 239TX4AJYH;
 				INFOPLIST_FILE = Class03/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

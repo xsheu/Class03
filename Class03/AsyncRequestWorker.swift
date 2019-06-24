@@ -2,6 +2,8 @@
 //  AsyncRequestWorker.swift
 //  MVCDemo
 //
+//  Created by 房懷安 on 2019/2/1.
+//  Copyright © 2019 房懷安. All rights reserved.
 //
 
 import Foundation
@@ -32,7 +34,7 @@ class AsyncRequestWorker {
             if( 200 == statusCode){
                 
                 let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-                let responseString = dataString! as String
+                let responseString = String( dataString! )
                 
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "response.received"), object: self, userInfo: ["aaa": responseString])
 
